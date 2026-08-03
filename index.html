@@ -3,394 +3,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBOA Industries | AI NATION — Architecte Business IA</title>
-    <meta name="description" content="MBOA Industries est votre partenaire stratégique en Intelligence Artificielle. Nous transformons vos processus métiers grâce à des solutions IA sur-mesure.">
+    <title>William Roger Khaled — Consultant IA & Architecte Business</title>
+    <meta name="description" content="MBOA Industries / AI NATION — Transformez vos processus métiers grâce à des solutions d'Intelligence Artificielle sur-mesure, des agents autonomes et à haut ROI.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
-    <header class="navbar" id="navbar">
-        <div class="nav-inner">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="ph-fill ph-brain"></i>
-                </div>
+    <!-- ═══════════════════════════════════════ HEADER / NAVBAR ═══════════════════════════════════════ -->
+    <div class="header-wrapper">
+        <header class="navbar" id="navbar">
+            <a href="#hero" class="logo">
+                <div class="logo-badge">WK</div>
                 <div class="logo-text">
-                    <strong>MBOA</strong>
-                    <span>AI NATION</span>
+                    <strong>William Khaled</strong>
+                    <span>Consultant IA</span>
                 </div>
-            </div>
+            </a>
 
             <nav class="nav-links">
-                <a href="#hero" class="nav-link active">Accueil</a>
-                <a href="#about" class="nav-link">À Propos</a>
-                <a href="#services" class="nav-link">Services <i class="ph ph-caret-down"></i></a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#services" class="nav-link">Services</a>
                 <a href="#testimonials" class="nav-link">Témoignages</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
             <div class="nav-actions">
-                <div class="nav-socials">
-                    <a href="https://www.linkedin.com/in/william-khaled-roger-melingui-ndziga-258232227/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-                    <a href="https://x.com/NbWilly" target="_blank" class="social-icon" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-                </div>
-                <a href="#contact" class="btn-cta" id="consultBtnNav">
-                    Prendre RDV <i class="ph ph-arrow-up-right"></i>
+                <a href="#contact" class="btn-pill-cta" id="navCtaBtn">
+                    Travaillons ensemble
+                    <span class="dot"></span>
                 </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu Mobile">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <nav>
-            <a href="#hero" class="mobile-link">Accueil</a>
-            <a href="#about" class="mobile-link">À Propos</a>
-            <a href="#services" class="mobile-link">Services</a>
-            <a href="#testimonials" class="mobile-link">Témoignages</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-        </nav>
-        <a href="#contact" class="btn-cta" style="margin-top: 2rem; display: inline-flex;">Prendre RDV <i class="ph ph-arrow-up-right"></i></a>
+        </header>
     </div>
 
-    <!-- ═══════════════════════════════════════ HERO ════════════════════════════════════════ -->
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Accueil</a>
+        <a href="#about" class="mobile-link">À propos</a>
+        <a href="#skills" class="mobile-link">Compétences</a>
+        <a href="#projects" class="mobile-link">Projets</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#testimonials" class="mobile-link">Témoignages</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="btn-pill-cta" style="margin-top: 1.5rem;">Prendre RDV</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════ HERO SECTION ═══════════════════════════════════════ -->
     <section class="hero" id="hero">
-        <!-- Background image overlay -->
-        <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80&w=1600" alt="William MBOA — Consultant IA" class="hero-image">
-            <div class="hero-overlay"></div>
-        </div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
 
-        <!-- Top tag line -->
-        <div class="hero-tag reveal">
-            <span class="pulse-dot"></span>
-            William Roger Khaled · Consultant IA & Business
-        </div>
+        <div class="container hero-content">
+            <div class="hero-status-tag reveal">
+                <span class="pulse-dot"></span>
+                William Roger Khaled · Architecte Business & IA
+            </div>
 
-        <!-- Main heading -->
-        <div class="hero-headline reveal">
-            <h1>
-                Transformez.<br>
-                Automatisez.<br>
-                <em>Dominez.</em>
+            <h1 class="hero-title reveal">
+                Transformez.
+                <span class="italic-span">Automatisez.</span>
+                <span class="highlight-span">Dominez.</span>
             </h1>
-        </div>
 
-        <!-- Book call pill (like Dribbble) -->
-        <div class="hero-cta-pill reveal">
-            <a href="#contact" class="pill-btn" id="heroBookBtn">
-                <span class="pill-icon"><i class="ph-fill ph-phone-call"></i></span>
-                Consultation gratuite
-                <i class="ph ph-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Sub description -->
-        <div class="hero-sub reveal">
-            <p>Architecte de solutions IA sur-mesure pour les entreprises en croissance.</p>
-        </div>
-
-        <!-- Stats Bar -->
-        <div class="stats-bar reveal">
-            <div class="stat-item">
-                <div class="stat-num" data-target="12">0</div>
-                <div class="stat-label">+ Entreprises<br>accompagnées</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <div class="stat-num" data-target="40">0</div>
-                <div class="stat-label">% Croissance<br>moyenne client</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <div class="stat-num">98</div>
-                <div class="stat-label">% Clients<br>satisfaits</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <div class="stat-num">#1</div>
-                <div class="stat-label">Consulting IA<br>Cameroun</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
-    <section class="about" id="about">
-        <div class="about-inner container">
-            <!-- Image col -->
-            <div class="about-image-col reveal">
-                <div class="about-img-wrapper">
-                    <img src="images/photo_ai.png" alt="William Roger Khaled — Consultant IA" class="about-img">
-                    <div class="about-img-badge">
-                        <i class="ph-fill ph-certificate"></i>
-                        Expert certifié IA
-                    </div>
-                    <div class="about-img-floating-card">
-                        <div class="floating-card-icon"><i class="ph-fill ph-brain"></i></div>
-                        <div>
-                            <strong>5+ ans</strong>
-                            <span>d'expertise IA</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Signature style -->
-                <div class="signature">William Roger Khaled</div>
-            </div>
-
-            <!-- Text col -->
-            <div class="about-text-col reveal">
-                <div class="section-tag">✦ À Propos ✦</div>
-                <h2 class="section-title">
-                    Expertise &amp;<br>
-                    <span class="highlight">Vision Stratégique</span>
-                </h2>
-                <p class="about-desc">
-                    Nous pensons que l'un des outils dont l'Afrique dispose pour combler l'écart entre ses industries et celles des autres continents est l'Intelligence Artificielle.
+            <div class="hero-subtitle-box reveal">
+                <p class="hero-desc">
+                    J'accompagne les entreprises et organisations à intégrer des systèmes d'Agents IA autonomes et des workflows d'automatisation sur-mesure pour démultiplier leur productivité et leur croissance.
                 </p>
-                <p class="about-desc" style="margin-top: 1.5rem;">
-                    Mon approche repose sur l'implémentation de solutions d'ingénierie innovantes, hautement rentables et low cost, adaptées aux réalités économiques.
-                </p>
-
-                <div class="about-tags">
-                    <span class="tag">Automatisation</span>
-                    <span class="tag">Stratégie IA</span>
-                    <span class="tag">ROI Mesurable</span>
-                    <span class="tag">Croissance</span>
+                <div class="hero-pills">
+                    <span class="hero-pill">Orchestration Multi-Agents</span>
+                    <span class="hero-pill">Automatisation n8n</span>
+                    <span class="hero-pill">RAG & LLMs Enterprise</span>
+                    <span class="hero-pill">Applications Mobile & Smart Tech</span>
+                    <span class="hero-pill">Stratégie ROI</span>
                 </div>
+            </div>
 
-                <a href="#contact" class="btn-dark" id="aboutReadMore">
-                    Lire mon histoire complète <i class="ph ph-arrow-right"></i>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn-hero-primary" id="heroExploreBtn">
+                    Découvrir mes projets
+                    <div class="arrow-circle">
+                        <i class="ph ph-arrow-up-right"></i>
+                    </div>
+                </a>
+                <a href="#contact" class="btn-hero-secondary" id="heroContactBtn">
+                    Ou réservez une consultation gratuite
+                    <i class="ph ph-arrow-right"></i>
                 </a>
             </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar-grid reveal" id="statsBar">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12">12+</div>
+                    <div class="stat-label">Entreprises accompagnées</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40">40%</div>
+                    <div class="stat-label">Croissance moyenne enregistrée</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Taux de satisfaction clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">#1</div>
+                    <div class="stat-label">Consulting IA Cameroun</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════ SERVICES ═══════════════════════════════════════ -->
-    <section class="services" id="services">
+    <!-- ═══════════════════════════════════════ SECTION 01 — À PROPOS ═══════════════════════════════════════ -->
+    <section class="about-section" id="about">
         <div class="container">
-            <div class="services-header reveal">
-                <div class="section-tag light">✦ Nos Services ✦</div>
-                <h2 class="section-title white">Ce que nous<br>faisons pour vous.</h2>
+            <div class="section-tag reveal">(01) ✦ À propos</div>
+            
+            <div class="about-grid">
+                <!-- Visual / Photo Column -->
+                <div class="about-photo-wrapper reveal">
+                    <div class="about-photo-card">
+                        <img src="images/photo_ai.png" alt="William Roger Khaled — Consultant IA">
+                        <div class="about-location-pill">
+                            <i class="ph-fill ph-map-pin" style="color: var(--accent);"></i>
+                            Douala & Yaoundé · Cameroun
+                        </div>
+                    </div>
+                    <div class="about-availability-badge">
+                        <span class="pulse-dot"></span>
+                        Disponible — Missions d'ingénierie d'Agents IA & conseil
+                    </div>
+                </div>
+
+                <!-- Bio & Vision Column -->
+                <div class="about-text-col reveal">
+                    <h2 class="section-title">
+                        Propulser l'Afrique grâce à
+                        <span class="italic">l'Ingénierie d'Agents IA.</span>
+                    </h2>
+                    <p class="about-manifesto">
+                        Nous pensons que l'un des outils majeurs dont l'Afrique dispose pour combler l'écart entre ses industries et celles des autres continents est l'Intelligence Artificielle.
+                    </p>
+                    <p class="about-manifesto" style="margin-top: 1rem;">
+                        Mon approche repose sur la conception de systèmes d'agents IA autonomes et d'architectures d'ingénierie innovantes, hautement rentables et adaptées aux réalités économiques.
+                    </p>
+
+                    <div class="about-passions">
+                        <span class="passion-tag"><i class="ph-fill ph-brain" style="color:var(--accent);"></i> Multi-Agent Orchestration</span>
+                        <span class="passion-tag"><i class="ph-fill ph-robot" style="color:var(--accent);"></i> Automations n8n</span>
+                        <span class="passion-tag"><i class="ph-fill ph-device-mobile" style="color:var(--accent-2);"></i> Mobile Apps Kotlin</span>
+                        <span class="passion-tag"><i class="ph-fill ph-coffee" style="color:var(--accent-amber);"></i> Café à Yaoundé</span>
+                    </div>
+
+                    <figure class="quote-card">
+                        <blockquote>
+                            « L'avenir n'est pas seulement d'utiliser des modèles de langage, mais d'orchestrer des équipes d'Agents IA spécialisés au service du business. »
+                        </blockquote>
+                        <figcaption>— William Roger Khaled · Principe d'ingénierie</figcaption>
+                    </figure>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECTION 02 — COMPÉTENCES (TOOLKIT) ═══════════════════════════════════════ -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-tag reveal">(02) ✦ Compétences & Outils</div>
+            <h2 class="section-title reveal">
+                Une boîte à outils d'ingénierie, <br>
+                <em class="italic">pas une simple checklist.</em>
+            </h2>
+
+            <div class="skills-grid reveal">
+                <!-- Card 1 -->
+                <div class="skill-category-card">
+                    <span class="skill-num">01 · AGENTS IA & GENAI</span>
+                    <h3 class="skill-category-title">Orchestration & Agents IA</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill highlight">Multi-Agent Systems</span>
+                        <span class="skill-pill highlight">Claude Code Orchestrator</span>
+                        <span class="skill-pill">RAG Systems</span>
+                        <span class="skill-pill">LangChain / LlamaIndex</span>
+                        <span class="skill-pill">OpenAI / Anthropic APIs</span>
+                        <span class="skill-pill">Ideogram & Midjourney Prompts</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="skill-category-card">
+                    <span class="skill-num">02 · DEVELOPPEMENT</span>
+                    <h3 class="skill-category-title">Langages & Apps Mobile</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill highlight">Python (FastAPI / Flask)</span>
+                        <span class="skill-pill highlight">Kotlin / Android Jetpack</span>
+                        <span class="skill-pill">TypeScript</span>
+                        <span class="skill-pill">React.js / Node.js</span>
+                        <span class="skill-pill">Room Database & SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="skill-category-card">
+                    <span class="skill-num">03 · WORKFLOWS</span>
+                    <h3 class="skill-category-title">Automatisation & Workflows</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill highlight-alt">n8n Workflows</span>
+                        <span class="skill-pill highlight-alt">Make / Zapier</span>
+                        <span class="skill-pill">API Integrations</span>
+                        <span class="skill-pill">WhatsApp / Telegram Bots</span>
+                        <span class="skill-pill">CLI & Slash Commands</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="skill-category-card">
+                    <span class="skill-num">04 · DATA & INFRA</span>
+                    <h3 class="skill-category-title">Bases de Données & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">PostgreSQL / MySQL</span>
+                        <span class="skill-pill">ChromaDB / Pinecone</span>
+                        <span class="skill-pill">Redis</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">Git / GitHub / GitLab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECTION 03 — PROJETS EN SLIDES ═══════════════════════════════════════ -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-tag reveal">(03) ✦ Réalisations & Projets</div>
+            <h2 class="section-title reveal">
+                Mes projets réels, <em class="italic">racontés en slides.</em>
+            </h2>
+
+            <!-- Header Controls & Counter -->
+            <div class="slides-header-bar reveal">
+                <div class="slide-counter">
+                    <span class="counter-current" id="counterCurrent">01</span>
+                    <span class="counter-total">/ 04</span>
+                </div>
+                <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="progressBarFill"></div>
+                </div>
+                <div class="keyboard-hint">Clavier ← / →</div>
+            </div>
+
+            <!-- Slides Viewport Container -->
+            <div class="slides-viewport reveal" id="slidesViewport">
+                <!-- Slide 1 (FEATURED AGENTS IA PROJECT) -->
+                <article class="slide-item active" data-index="0">
+                    <div class="slide-media" style="background-image: url('images/ndziga_multi_agent_system.png');">
+                        <div class="slide-media-badge">
+                            <i class="ph-fill ph-brain" style="color:var(--accent);"></i>
+                            Agents IA & Multi-Agent Orchestration
+                        </div>
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <div class="slide-meta">
+                                <span><i class="ph ph-calendar"></i> 2025 - 2026</span>
+                                <span>·</span>
+                                <span class="role">Architecte IA & Ingénieur Systèmes</span>
+                            </div>
+                            <h3 class="slide-title">NDZIGA Multi-Agent Orchestrator</h3>
+                            <p class="slide-desc">
+                                Système multi-agents IA autonome piloté par un orchestrateur central. Coordonne 5 sous-agents spécialisés (Stratège, Créateur de Contenu, Designer Visuel, Analyste Performance, Présentateur Decks) capables de générer des campagnes d'acquisition complètes via slash commands.
+                            </p>
+                            <div class="slide-outcomes">
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> 5 sous-agents autonomes pilotés via /brief, /post, /visuel, /analyse</div>
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> Pipelines IA automatisant le marketing, les decks et l'analyse de données</div>
+                            </div>
+                        </div>
+                        <div class="slide-footer">
+                            <a href="#contact" class="btn-slide-action">
+                                Découvrir l'architecture <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Slide 2 (MYTRASH MOBILE APP) -->
+                <article class="slide-item" data-index="1">
+                    <div class="slide-media" style="background-image: url('images/my_trash_app_preview.png');">
+                        <div class="slide-media-badge">
+                            <i class="ph-fill ph-device-mobile" style="color:var(--accent-2);"></i>
+                            Mobile App Kotlin & Smart Logistics
+                        </div>
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <div class="slide-meta">
+                                <span><i class="ph ph-calendar"></i> 2025</span>
+                                <span>·</span>
+                                <span class="role">Lead Mobile Developer & Architecte</span>
+                            </div>
+                            <h3 class="slide-title">MyTrash — Écosystème Smart Waste</h3>
+                            <p class="slide-desc">
+                                Application mobile Android native (Jetpack Compose & Room DB) dédiée à la gestion, collecte et valorisation écologique des déchets. Intègre un annuaire d'assainissement, un suivi logistique géolocalisé et une marketplace citoyenne de recyclage.
+                            </p>
+                            <div class="slide-outcomes">
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> Marketplace de recyclage citoyen & annuaire d'assainissement</div>
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> Suivi logistique temps réel pour les opérateurs de collecte</div>
+                            </div>
+                        </div>
+                        <div class="slide-footer">
+                            <a href="#contact" class="btn-slide-action">
+                                Voir la démo mobile <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Slide 3 (MBOA AI AUTOMATION) -->
+                <article class="slide-item" data-index="2">
+                    <div class="slide-media" style="background-image: url('images/mboa_ai_automation.png');">
+                        <div class="slide-media-badge">
+                            <i class="ph-fill ph-robot" style="color:var(--accent);"></i>
+                            Automatisation IA & n8n Workflows
+                        </div>
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <div class="slide-meta">
+                                <span><i class="ph ph-calendar"></i> 2025</span>
+                                <span>·</span>
+                                <span class="role">Workflow & Automation Engineer</span>
+                            </div>
+                            <h3 class="slide-title">MBOA AI Enterprise Automation</h3>
+                            <p class="slide-desc">
+                                Architecture d'automatisation des opérations d'entreprise combinant n8n, FastAPI et modèles LLM. Traitement automatique des factures, qualification intelligente de prospects et réponses clients autonomes.
+                            </p>
+                            <div class="slide-outcomes">
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> +20 heures économisées par semaine par entreprise cliente</div>
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> Connexion fluide avec CRM, WhatsApp Business & bases SQL</div>
+                            </div>
+                        </div>
+                        <div class="slide-footer">
+                            <a href="#contact" class="btn-slide-action">
+                                Demander une automatisation <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Slide 4 (MBOA AI NATION & COACHING) -->
+                <article class="slide-item" data-index="3">
+                    <div class="slide-media" style="background-image: url('images/mboa_ai_nation_coaching.png');">
+                        <div class="slide-media-badge">
+                            <i class="ph-fill ph-student" style="color:var(--accent-amber);"></i>
+                            Formation & Coaching Executive
+                        </div>
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <div class="slide-meta">
+                                <span><i class="ph ph-calendar"></i> 2024 - 2026</span>
+                                <span>·</span>
+                                <span class="role">Executive Coach & Formateur IA</span>
+                            </div>
+                            <h3 class="slide-title">MBOA AI NATION & Coaching</h3>
+                            <p class="slide-desc">
+                                Programme d'accompagnement et de montée en compétences pour dirigeants, comités de direction et équipes techniques. Maîtrise des agents IA, de l'ingénierie de prompts et intégration concrète de l'IA générative dans les processus métiers.
+                            </p>
+                            <div class="slide-outcomes">
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> Plus de 120 dirigeants et cadres formés avec succès</div>
+                                <div class="outcome-item"><i class="ph-fill ph-check-circle"></i> 98% de satisfaction apprenant et ROI opérationnel immédiat</div>
+                            </div>
+                        </div>
+                        <div class="slide-footer">
+                            <a href="#contact" class="btn-slide-action">
+                                Réserver un coaching <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Controls & Pills Selector Row -->
+            <div class="slides-controls-row reveal">
+                <div class="arrows-group">
+                    <button class="btn-arrow" id="btnPrevSlide" aria-label="Slide précédente">
+                        <i class="ph ph-arrow-left"></i>
+                    </button>
+                    <button class="btn-arrow" id="btnNextSlide" aria-label="Slide suivante">
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="slide-pills-selector" id="pillsSelector">
+                    <button class="slide-selector-pill active" data-target-slide="0">
+                        <span class="pill-dot"></span> Multi-Agent Orchestrator
+                    </button>
+                    <button class="slide-selector-pill" data-target-slide="1">
+                        <span class="pill-dot"></span> MyTrash Mobile App
+                    </button>
+                    <button class="slide-selector-pill" data-target-slide="2">
+                        <span class="pill-dot"></span> Enterprise Automation
+                    </button>
+                    <button class="slide-selector-pill" data-target-slide="3">
+                        <span class="pill-dot"></span> MBOA AI NATION & Coaching
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECTION 04 — SERVICES ═══════════════════════════════════════ -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-tag reveal">(04) ✦ Nos Services</div>
+            <h2 class="section-title reveal">
+                Des solutions concrètes pour <br>
+                <em class="italic">accélérer votre entreprise.</em>
+            </h2>
 
             <div class="services-grid reveal">
-                <div class="service-card" id="serviceCard1">
+                <div class="service-card">
+                    <div class="service-icon"><i class="ph-fill ph-brain"></i></div>
+                    <h3>Ingénierie d'Agents IA</h3>
+                    <p>Conception et déploiement d'agents IA autonomes spécialisés pour exécuter vos tâches complexes et vos flux opérationnels.</p>
+                </div>
+                <div class="service-card">
                     <div class="service-icon"><i class="ph-fill ph-robot"></i></div>
-                    <h3>Automatisation IA</h3>
-                    <p>Automatisez vos flux de travail répétitifs et libérez vos équipes pour les tâches à haute valeur ajoutée.</p>
-                    <a href="#" class="service-link">Explorer <i class="ph ph-arrow-up-right"></i></a>
+                    <h3>Automatisation n8n</h3>
+                    <p>Automatisez vos processus répétitifs et connectez vos outils SaaS avec des workflows n8n ultra-performants.</p>
                 </div>
-                <div class="service-card featured" id="serviceCard2">
-                    <div class="service-icon"><i class="ph-fill ph-chart-line-up"></i></div>
-                    <h3>Stratégie de Croissance</h3>
-                    <p>Des roadmaps IA personnalisées pour multiplier votre chiffre d'affaires et surpasser la concurrence.</p>
-                    <a href="#" class="service-link">Explorer <i class="ph ph-arrow-up-right"></i></a>
+                <div class="service-card">
+                    <div class="service-icon"><i class="ph-fill ph-device-mobile"></i></div>
+                    <h3>Développement Web & Mobile</h3>
+                    <p>Création d'applications mobiles Android natives (Kotlin) et web apps sur-mesure intégrées aux technologies IA.</p>
                 </div>
-                <div class="service-card" id="serviceCard3">
-                    <div class="service-icon"><i class="ph-fill ph-lightning"></i></div>
-                    <h3>Intégrations SaaS IA</h3>
-                    <p>Déployez les meilleurs outils IA du marché, parfaitement intégrés à votre stack existante.</p>
-                    <a href="#" class="service-link">Explorer <i class="ph ph-arrow-up-right"></i></a>
-                </div>
-                <div class="service-card" id="serviceCard4">
+                <div class="service-card">
                     <div class="service-icon"><i class="ph-fill ph-users-three"></i></div>
-                    <h3>Formation & Coaching</h3>
-                    <p>Formez vos équipes aux meilleures pratiques IA et créez une culture data-driven durable.</p>
-                    <a href="#" class="service-link">Explorer <i class="ph ph-arrow-up-right"></i></a>
+                    <h3>MBOA AI NATION & Coaching</h3>
+                    <p>Formations et coaching exécutif pour comités de direction et équipes techniques afin d'instaurer une culture IA durable.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════ TESTIMONIALS ═══════════════════════════════════════ -->
-    <section class="testimonials" id="testimonials">
+    <!-- ═══════════════════════════════════════ SECTION 05 — TÉMOIGNAGES ═══════════════════════════════════════ -->
+    <section class="testimonials-section" id="testimonials">
         <div class="container">
-            <div class="testimonials-header reveal">
-                <div class="section-tag">✦ Témoignages ✦</div>
-                <h2 class="section-title">Témoignages &amp;<br>Preuves Sociales.</h2>
-            </div>
+            <div class="section-tag reveal">(05) ✦ Témoignages</div>
+            <h2 class="section-title reveal">
+                Ce qu'en disent les <em class="italic">dirigeants accompagnés.</em>
+            </h2>
 
             <div class="testi-grid reveal">
-                <div class="testi-card" id="testiCard1">
-                    <div class="testi-top">
+                <div class="testi-card">
+                    <div class="testi-header">
                         <img src="https://i.pravatar.cc/80?img=47" alt="Beverley D." class="testi-avatar">
-                        <div>
+                        <div class="testi-info">
                             <strong>Beverley D.</strong>
                             <span>CEO, Nexora Digital</span>
                         </div>
                         <div class="stars">★★★★★</div>
                     </div>
-                    <p>"En rejoignant le programme, j'ai drastiquement amélioré mes compétences en rédaction et leadership. Le ROI a été immédiat : +35% de revenus en 3 mois. Un partenaire de confiance."</p>
+                    <p class="testi-text">
+                        "En travaillant avec William, notre entreprise a déployé des agents IA qui gèrent automatiquement l'essentiel de notre prospection. Le ROI a été immédiat : +35% de chiffre d'affaires !"
+                    </p>
                 </div>
 
-                <div class="testi-card featured-testi" id="testiCard2">
-                    <div class="testi-top">
+                <div class="testi-card">
+                    <div class="testi-header">
                         <img src="https://i.pravatar.cc/80?img=12" alt="Marc L." class="testi-avatar">
-                        <div>
+                        <div class="testi-info">
                             <strong>Marc L.</strong>
                             <span>Fondateur, InnoTech</span>
                         </div>
                         <div class="stars">★★★★★</div>
                     </div>
-                    <p>"MBOA Industries a transformé notre façon de travailler. L'automatisation de notre prospection nous a économisé 20h/semaine. Un investissement rentable à 10x en 6 mois."</p>
+                    <p class="testi-text">
+                        "William a transformé nos processus avec l'automatisation n8n et les agents IA. Nous économisons plus de 20h par semaine sur nos tâches administratives et documentaires."
+                    </p>
                 </div>
 
-                <div class="testi-card" id="testiCard3">
-                    <div class="testi-top">
+                <div class="testi-card">
+                    <div class="testi-header">
                         <img src="https://i.pravatar.cc/80?img=25" alt="Sophie M." class="testi-avatar">
-                        <div>
+                        <div class="testi-info">
                             <strong>Sophie M.</strong>
                             <span>Directrice Marketing, Vala Corp</span>
                         </div>
                         <div class="stars">★★★★★</div>
                     </div>
-                    <p>"La clarté stratégique apportée par William est incomparable. Nous avons enfin une roadmap IA concrète et mesurable. Nos équipes sont maintenant autonomes sur les outils."</p>
+                    <p class="testi-text">
+                        "Le programme de coaching MBOA AI NATION a permis à nos comités de direction et équipes d'adopter immédiatement les bons reflexes IA avec une roadmap concrète."
+                    </p>
                 </div>
-            </div>
-
-            <div class="testi-pagination reveal">
-                <button class="page-dot active" id="dot1" aria-label="Témoignage 1"></button>
-                <button class="page-dot" id="dot2" aria-label="Témoignage 2"></button>
-                <button class="page-dot" id="dot3" aria-label="Témoignage 3"></button>
             </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════ VIDEO / RESSOURCES ═══════════════════════════════════════ -->
-    <section class="videos-section">
+    <!-- ═══════════════════════════════════════ SECTION 06 — CONTACT & FOOTER ═══════════════════════════════════════ -->
+    <section class="contact-section" id="contact">
         <div class="container">
-            <div class="videos-header reveal">
-                <div class="section-tag light">✦ Ressources ✦</div>
-                <h2 class="section-title white">Mes derniers<br>contenus IA.</h2>
-                <a href="#" class="btn-purple" id="watchMoreBtn">Voir tout <i class="ph ph-arrow-right"></i></a>
+            <div class="contact-header reveal">
+                <div class="section-tag">(06) ✦ Contact</div>
+                <h2 class="section-title">
+                    Bâtissons ensemble <br>
+                    <em class="italic">votre avantage compétitif.</em>
+                </h2>
             </div>
 
-            <div class="videos-grid reveal">
-                <div class="video-card" id="videoCard1">
-                    <div class="video-thumb">
-                        <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&q=80&w=600" alt="Avant-après avec l'IA" loading="lazy">
-                        <button class="video-play-btn" aria-label="Lire la vidéo">
-                            <i class="ph-fill ph-play"></i>
-                        </button>
-                    </div>
-                    <div class="video-info">
-                        <span class="video-tag">Cas concret</span>
-                        <h4>Comment l'IA a 3x les revenus d'une PME en 90 jours</h4>
-                    </div>
-                </div>
-
-                <div class="video-card" id="videoCard2">
-                    <div class="video-thumb">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600" alt="Guide automatisation" loading="lazy">
-                        <button class="video-play-btn" aria-label="Lire la vidéo">
-                            <i class="ph-fill ph-play"></i>
-                        </button>
-                    </div>
-                    <div class="video-info">
-                        <span class="video-tag">Tutoriel</span>
-                        <h4>5 outils IA indispensables pour automatiser votre business</h4>
-                    </div>
-                </div>
-
-                <div class="video-card" id="videoCard3">
-                    <div class="video-thumb">
-                        <img src="https://images.unsplash.com/photo-1642615835477-d303d7dc9ee9?auto=format&fit=crop&q=80&w=600" alt="Stratégie IA 2025" loading="lazy">
-                        <button class="video-play-btn" aria-label="Lire la vidéo">
-                            <i class="ph-fill ph-play"></i>
-                        </button>
-                    </div>
-                    <div class="video-info">
-                        <span class="video-tag">Stratégie</span>
-                        <h4>Les 3 erreurs fatales en stratégie IA que font les dirigeants</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════ CTA BANNER ═══════════════════════════════════════ -->
-    <section class="cta-banner">
-        <div class="cta-inner container reveal">
-            <div class="cta-text">
-                <h2>Bâtissons ensemble<br>votre empire IA.</h2>
-                <p>Une consultation gratuite de 30 minutes pour analyser votre potentiel de transformation.</p>
-            </div>
-            <div class="cta-actions">
-                <a href="#contact" class="btn-white" id="ctaBannerBtn">Réserver ma session <i class="ph ph-arrow-up-right"></i></a>
-                <div class="cta-avatars">
-                    <img src="https://i.pravatar.cc/40?img=11" alt="Client">
-                    <img src="https://i.pravatar.cc/40?img=32" alt="Client">
-                    <img src="https://i.pravatar.cc/40?img=68" alt="Client">
-                    <span>+120 dirigeants font confiance à MBOA</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="logo" style="margin-bottom: 1rem;">
-                        <div class="logo-icon"><i class="ph-fill ph-brain"></i></div>
-                        <div class="logo-text">
-                            <strong style="color:#fff;">MBOA INDUSTRIES</strong>
-                            <span style="color:rgba(255,255,255,0.5);">AI NATION</span>
+            <div class="contact-grid reveal">
+                <!-- Info Col -->
+                <div class="contact-info-col">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="ph-fill ph-envelope"></i></div>
+                        <div class="contact-detail">
+                            <strong>Email direct</strong>
+                            <a href="mailto:willykhalednb@gmail.com">willykhalednb@gmail.com</a>
                         </div>
                     </div>
-                    <p class="footer-desc">Architecte de business IA.<br>Transformez votre entreprise en moteur de croissance automatisé.</p>
-                    <div class="footer-socials">
-                        <a href="https://www.linkedin.com/in/william-khaled-roger-melingui-ndziga-258232227/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="https://x.com/NbWilly" target="_blank" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-                        <a href="mailto:willykhalednb@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="ph-fill ph-phone"></i></div>
+                        <div class="contact-detail">
+                            <strong>Téléphone / WhatsApp</strong>
+                            <a href="tel:+237697180296">+237 697 18 02 96</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="ph-fill ph-map-pin"></i></div>
+                        <div class="contact-detail">
+                            <strong>Localisation</strong>
+                            <span>Douala & Yaoundé, Cameroun</span>
+                        </div>
+                    </div>
+
+                    <div class="socials-row">
+                        <a href="https://www.linkedin.com/in/william-khaled-roger-melingui-ndziga-258232227/" target="_blank" class="social-pill">
+                            <i class="ph ph-linkedin-logo"></i> LinkedIn
+                        </a>
+                        <a href="https://x.com/NbWilly" target="_blank" class="social-pill">
+                            <i class="ph ph-twitter-logo"></i> Twitter / X
+                        </a>
                     </div>
                 </div>
 
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Navigation</h5>
-                        <a href="#hero">Accueil</a>
-                        <a href="#about">À Propos</a>
-                        <a href="#services">Services</a>
-                        <a href="#testimonials">Témoignages</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Services</h5>
-                        <a href="#">Automatisation</a>
-                        <a href="#">Stratégie IA</a>
-                        <a href="#">Formations</a>
-                        <a href="#">Intégrations</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Contact</h5>
-                        <a href="mailto:willykhalednb@gmail.com"><i class="ph ph-envelope-simple"></i> willykhalednb@gmail.com</a>
-                        <a href="tel:+237697180296"><i class="ph ph-phone"></i> +237 697180296</a>
-                        <a href="#"><i class="ph ph-clock"></i> Lun-Ven: 9:00-18:00</a>
-                    </div>
+                <!-- Form Col -->
+                <div class="contact-form-card">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="userName">Votre Nom complet</label>
+                            <input type="text" id="userName" class="form-input" placeholder="Ex: Jean Dupont" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="userEmail">Adresse Email professionnelle</label>
+                            <input type="email" id="userEmail" class="form-input" placeholder="jean@entreprise.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="userMessage">Présentez votre projet ou besoin IA</label>
+                            <textarea id="userMessage" class="form-textarea" placeholder="Décrivez vos objectifs d'automatisation, d'agents IA ou de projet mobile..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Envoyer ma demande <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <span>© 2026 MBOA Industries AI NATION. Tous droits réservés.</span>
-                <div class="footer-bottom-links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
+                <span>© 2026 MBOA Industries · AI NATION — William Roger Khaled.</span>
+                <span>Ingénierie d'Agents IA & Automations.</span>
             </div>
         </div>
-    </footer>
+    </section>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
