@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
 /* ==========================================================================
    MBOA Industries / AI NATION — William Roger Khaled Portfolio
    Design System & Styling Inspired by Belinga Portfolio
    ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 :root {
   --bg-main: #F9F9FB;
@@ -308,7 +308,7 @@ img {
    ========================================================================== */
 .hero {
   position: relative;
-  min-h: 100vh;
+  min-height: 100vh;
   padding-top: 10rem;
   padding-bottom: 5rem;
   display: flex;
@@ -1131,12 +1131,12 @@ img {
 }
 
 /* ==========================================================================
-   SECTION 06 — CONTACT & FOOTER
+   SECTION 06 — CONTACT & FOOTER (BULLETPROOF FORM & CARDS STYLING)
    ========================================================================== */
 .contact-section {
   padding: 6rem 0;
-  background: var(--bg-ink);
-  color: #fff;
+  background: #0F172A !important;
+  color: #FFFFFF !important;
   border-radius: 3rem 3rem 0 0;
   margin-top: 4rem;
 }
@@ -1148,15 +1148,15 @@ img {
 }
 
 .contact-header .section-tag {
-  color: var(--accent-2);
+  color: #10B981 !important;
 }
 
 .contact-header .section-title {
-  color: #fff;
+  color: #FFFFFF !important;
 }
 
 .contact-header .section-title em {
-  color: #94A3B8;
+  color: #94A3B8 !important;
 }
 
 .contact-grid {
@@ -1178,10 +1178,10 @@ img {
 }
 
 .contact-info-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   padding: 1.5rem;
-  border-radius: var(--radius-lg);
+  border-radius: 1.25rem;
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -1189,15 +1189,15 @@ img {
 }
 
 .contact-info-card:hover {
-  border-color: var(--accent);
+  border-color: #6366F1 !important;
 }
 
 .contact-icon {
   width: 3rem;
   height: 3rem;
-  background: rgba(79, 70, 229, 0.2);
-  color: #818CF8;
-  border-radius: var(--radius-md);
+  background: rgba(79, 70, 229, 0.2) !important;
+  color: #818CF8 !important;
+  border-radius: 0.75rem;
   display: grid;
   place-items: center;
   font-size: 1.5rem;
@@ -1206,15 +1206,16 @@ img {
 .contact-detail strong {
   display: block;
   font-size: 0.85rem;
-  color: #94A3B8;
+  color: #94A3B8 !important;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  margin-bottom: 0.2rem;
 }
 
 .contact-detail a, .contact-detail span {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  color: #fff;
+  color: #FFFFFF !important;
 }
 
 .socials-row {
@@ -1227,55 +1228,63 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
   padding: 0.6rem 1.25rem;
-  border-radius: var(--radius-full);
+  border-radius: 9999px;
   font-size: 0.85rem;
-  color: #fff;
+  color: #FFFFFF !important;
   transition: all 0.2s ease;
 }
 
 .social-pill:hover {
-  background: #fff;
-  color: var(--bg-ink);
+  background: #FFFFFF !important;
+  color: #0F172A !important;
 }
 
-/* Form Styling */
+/* Bulletproof Form Elements */
 .contact-form-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   padding: 2.5rem;
-  border-radius: var(--radius-xl);
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
 }
 
 .form-group {
   margin-bottom: 1.5rem;
 }
 
-.form-label {
+.form-label, label.form-label {
   display: block;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #CBD5E1;
+  color: #CBD5E1 !important;
   margin-bottom: 0.5rem;
 }
 
-.form-input, .form-textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-md);
-  padding: 0.85rem 1.1rem;
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: #fff;
-  outline: none;
-  transition: border-color 0.2s;
+.form-input, .form-textarea, input.form-input, textarea.form-textarea {
+  width: 100% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0.75rem !important;
+  padding: 0.85rem 1.1rem !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  color: #FFFFFF !important;
+  outline: none !important;
+  transition: border-color 0.2s, background 0.2s !important;
+  box-shadow: none !important;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+  color: #94A3B8 !important;
+  opacity: 0.8;
 }
 
 .form-input:focus, .form-textarea:focus {
-  border-color: var(--accent);
+  border-color: #6366F1 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
 }
 
 .form-textarea {
@@ -1283,24 +1292,26 @@ img {
   min-height: 120px;
 }
 
-.btn-submit {
-  width: 100%;
-  background: var(--accent);
-  color: #fff;
-  border-radius: var(--radius-full);
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  transition: all 0.3s ease;
+.btn-submit, button.btn-submit {
+  width: 100% !important;
+  background: #4F46E5 !important;
+  color: #FFFFFF !important;
+  border-radius: 9999px !important;
+  padding: 1rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
 }
 
 .btn-submit:hover {
-  background: #4338CA;
-  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.5);
+  background: #4338CA !important;
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.5) !important;
 }
 
 .footer-bottom {
